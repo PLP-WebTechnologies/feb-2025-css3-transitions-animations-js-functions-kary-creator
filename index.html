@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Event Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Web Page Assignment</h1>
+    <div id="preferences-panel" class="preferences-panel">
+      <div id="preferences-title" class="preferences-title">
+        <h3>User Preferences</h3>
+        <span>⚙️</span>
+      </div>
+      <div class="preferences-content">
+        <div class="preference-item">
+          <span>Theme</span>
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+        
+        <div class="preference-item">
+          <span>Accent Color</span>
+          <div class="color-picker">
+            <div class="color-option selected" style="background-color: #3498db;" data-color="#3498db"></div>
+            <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+            <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+            <div class="color-option" style="background-color: #f39c12;" data-color="#f39c12"></div>
+            <div class="color-option" style="background-color: #9b59b6;" data-color="#9b59b6"></div>
+          </div>
+        </div>
+        
+        <div class="preference-item">
+          <span>Animation Speed: <span id="speed-display">Normal</span></span>
+          <input type="range" min="0" max="2" value="1" class="speed-slider" id="animation-speed">
+        </div>
+        
+        <div class="preference-item">
+          <span>Font Size</span>
+          <select id="font-size">
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        
+        <button id="clear-data">Reset to Default</button>
+      </div>
+    </div>
+    
+    <section>
+      <h2>Event Handling</h2>
+      
+      <button id="main-button">Click Me</button>
+      
+      <div class="hover-effect" style="margin-top: 20px;">
+        <p>Hover over me to see an effect!</p>
+      </div>
+      
+      <p>Type something to see keypress detection:</p>
+      <div id="key-display">No key pressed yet</div>
+      
+      <p style="margin-top: 20px;"><em>Secret: Try double-clicking the button!</em></p>
+    </section>
+    
+    <section>
+      <h2>Interactive Elements 🎮</h2>
+      
+      <h3>Color Changing Button</h3>
+      <button id="color-button">Change Color</button>
+      <div id="color-target"></div>
+      
+      <h3>Image Gallery</h3>
+      <div class="gallery" id="gallery">
+        <img id="image-display" src="https://picsum.photos/id/1015/600/400" alt="Gallery Image">
+        <div class="gallery-controls">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+      
+      <h3>Tabs</h3>
+      <div class="tabs-container">
+        <div class="tabs">
+          <div class="tab">Tab 1</div>
+          <div class="tab">Tab 2</div>
+          <div class="tab">Tab 3</div>
+        </div>
+        <div class="tab-content">
+          <h4>Content for Tab 1</h4>
+          <p>This is the content for the first tab. You can put anything here.</p>
+        </div>
+        <div class="tab-content">
+          <h4>Content for Tab 2</h4>
+          <p>This is the content for the second tab. Different content here!</p>
+        </div>
+        <div class="tab-content
